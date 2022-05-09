@@ -19,7 +19,7 @@ void MainWindow::on_pushButton_clicked()
 {
     if(vid==nullptr)
     {
-        vid=new cv::VideoCapture("C:/SampleVideo/Savelev_ME_z-38.mp4"); // open video file
+        vid=new cv::VideoCapture("C:\\SampleVideo\\Savelev_ME_z-38.mp4"); // open video file
         if(!vid-> isOpened()) // check if we succeeded
             return;
     }

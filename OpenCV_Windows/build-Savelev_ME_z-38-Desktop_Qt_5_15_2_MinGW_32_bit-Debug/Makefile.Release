@@ -16,7 +16,7 @@ CXX           = g++
 DEFINES       = -DUNICODE -D_UNICODE -DWIN32 -DMINGW_HAS_SECURE_API=1 -DQT_QML_DEBUG -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NEEDS_QMAIN
 CFLAGS        = -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra $(DEFINES)
 CXXFLAGS      = -fno-keep-inline-dllexport -O2 -std=gnu++1z -Wall -Wextra -Wextra -fexceptions -mthreads $(DEFINES)
-INCPATH       = -I..\Savelev_ME_z-38 -I. -I..\Savelev_ME_z-38\opencv -I..\..\..\..\Qt\5.15.2\mingw81_32\include -I..\..\..\..\Qt\5.15.2\mingw81_32\include\QtWidgets -I..\..\..\..\Qt\5.15.2\mingw81_32\include\QtGui -I..\..\..\..\Qt\5.15.2\mingw81_32\include\QtANGLE -I..\..\..\..\Qt\5.15.2\mingw81_32\include\QtCore -Irelease -I. -I..\..\..\..\Qt\5.15.2\mingw81_32\mkspecs\win32-g++ 
+INCPATH       = -I..\Savelev_ME_z-38 -I. -I..\Savelev_ME_z-38\opencv\include -I..\..\..\..\Qt\5.15.2\mingw81_32\include -I..\..\..\..\Qt\5.15.2\mingw81_32\include\QtWidgets -I..\..\..\..\Qt\5.15.2\mingw81_32\include\QtGui -I..\..\..\..\Qt\5.15.2\mingw81_32\include\QtANGLE -I..\..\..\..\Qt\5.15.2\mingw81_32\include\QtCore -Irelease -I. -I..\..\..\..\Qt\5.15.2\mingw81_32\mkspecs\win32-g++ 
 LINKER      =        g++
 LFLAGS        =        -Wl,-s -Wl,-subsystem,windows -mthreads
 LIBS        =        -Lopencv\bin -lopencv_calib3d320d -lopencv_core320d lopencv_features2d320d -lopencv_flann320d -lopencv_highgui320d -lopencv_imgcodecs320d lopencv_imgproc320d -lopencv_ml320d -lopencv_objdetect320d -lopencv_photo320d -lopencv_shape320d - lopencv_stitching320d -lopencv_superres320d -lopencv_videoio320d -lopencv_videostab320d -lopencv_ffmpeg320 C:\Qt\5.15.2\mingw81_32\lib\libQt5Widgets.a C:\Qt\5.15.2\mingw81_32\lib\libQt5Gui.a C:\Qt\5.15.2\mingw81_32\lib\libQt5Core.a  -lmingw32 C:\Qt\5.15.2\mingw81_32\lib\libqtmain.a -LC:\openssl\lib -LC:\Utils\my_sql\mysql-5.7.25-win32\lib -LC:\Utils\postgresql\pgsql\lib -lshell32 
@@ -215,9 +215,50 @@ release/moc_mainwindow.cpp: ../Savelev_ME_z-38/mainwindow.h \
 		../../../../Qt/5.15.2/mingw81_32/include/QtGui/qtouchdevice.h \
 		../../../../Qt/5.15.2/mingw81_32/include/QtWidgets/qtabwidget.h \
 		../../../../Qt/5.15.2/mingw81_32/include/QtGui/qicon.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/core.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/cvdef.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/hal/interface.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/version.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/base.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/opencv_modules.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/cvstd.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/ptr.inl.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/neon_utils.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/traits.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/matx.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/saturate.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/fast_math.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/types.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/mat.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/bufferpool.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/mat.inl.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/persistence.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/operations.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/cvstd.inl.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/utility.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/core_c.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/types_c.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/optim.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/ovx.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/highgui/highgui.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/highgui.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/imgcodecs.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/videoio.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/highgui/highgui_c.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/imgproc/imgproc_c.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/imgproc/types_c.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/imgcodecs/imgcodecs_c.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/videoio/videoio_c.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/imgproc/imgproc.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/imgproc.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/objdetect/objdetect.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/objdetect.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/objdetect/detection_based_tracker.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/objdetect/objdetect_c.h \
 		release/moc_predefs.h \
 		../../../../Qt/5.15.2/mingw81_32/bin/moc.exe
-	C:\Qt\5.15.2\mingw81_32\bin\moc.exe $(DEFINES) --include C:/GitHub/BSD/OpenCV_Windows/build-Savelev_ME_z-38-Desktop_Qt_5_15_2_MinGW_32_bit-Debug/release/moc_predefs.h -IC:/Qt/5.15.2/mingw81_32/mkspecs/win32-g++ -IC:/GitHub/BSD/OpenCV_Windows/Savelev_ME_z-38 -IC:/GitHub/BSD/OpenCV_Windows/Savelev_ME_z-38/opencv -IC:/Qt/5.15.2/mingw81_32/include -IC:/Qt/5.15.2/mingw81_32/include/QtWidgets -IC:/Qt/5.15.2/mingw81_32/include/QtGui -IC:/Qt/5.15.2/mingw81_32/include/QtANGLE -IC:/Qt/5.15.2/mingw81_32/include/QtCore -I. -IC:/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++ -IC:/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward -IC:/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include -IC:/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include-fixed -IC:/Qt/Tools/mingw810_32/i686-w64-mingw32/include ..\Savelev_ME_z-38\mainwindow.h -o release\moc_mainwindow.cpp
+	C:\Qt\5.15.2\mingw81_32\bin\moc.exe $(DEFINES) --include C:/GitHub/BSD/OpenCV_Windows/build-Savelev_ME_z-38-Desktop_Qt_5_15_2_MinGW_32_bit-Debug/release/moc_predefs.h -IC:/Qt/5.15.2/mingw81_32/mkspecs/win32-g++ -IC:/GitHub/BSD/OpenCV_Windows/Savelev_ME_z-38 -IC:/GitHub/BSD/OpenCV_Windows/Savelev_ME_z-38/opencv/include -IC:/Qt/5.15.2/mingw81_32/include -IC:/Qt/5.15.2/mingw81_32/include/QtWidgets -IC:/Qt/5.15.2/mingw81_32/include/QtGui -IC:/Qt/5.15.2/mingw81_32/include/QtANGLE -IC:/Qt/5.15.2/mingw81_32/include/QtCore -I. -IC:/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++ -IC:/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward -IC:/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include -IC:/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include-fixed -IC:/Qt/Tools/mingw810_32/i686-w64-mingw32/include ..\Savelev_ME_z-38\mainwindow.h -o release\moc_mainwindow.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -349,6 +390,47 @@ release/main.o: ../Savelev_ME_z-38/main.cpp ../Savelev_ME_z-38/mainwindow.h \
 		../../../../Qt/5.15.2/mingw81_32/include/QtGui/qtouchdevice.h \
 		../../../../Qt/5.15.2/mingw81_32/include/QtWidgets/qtabwidget.h \
 		../../../../Qt/5.15.2/mingw81_32/include/QtGui/qicon.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/core.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/cvdef.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/hal/interface.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/version.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/base.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/opencv_modules.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/cvstd.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/ptr.inl.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/neon_utils.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/traits.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/matx.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/saturate.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/fast_math.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/types.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/mat.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/bufferpool.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/mat.inl.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/persistence.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/operations.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/cvstd.inl.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/utility.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/core_c.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/types_c.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/optim.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/ovx.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/highgui/highgui.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/highgui.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/imgcodecs.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/videoio.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/highgui/highgui_c.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/imgproc/imgproc_c.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/imgproc/types_c.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/imgcodecs/imgcodecs_c.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/videoio/videoio_c.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/imgproc/imgproc.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/imgproc.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/objdetect/objdetect.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/objdetect.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/objdetect/detection_based_tracker.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/objdetect/objdetect_c.h \
 		../../../../Qt/5.15.2/mingw81_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.15.2/mingw81_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.15.2/mingw81_32/include/QtCore/qcoreapplication.h \
@@ -465,6 +547,47 @@ release/mainwindow.o: ../Savelev_ME_z-38/mainwindow.cpp ../Savelev_ME_z-38/mainw
 		../../../../Qt/5.15.2/mingw81_32/include/QtGui/qtouchdevice.h \
 		../../../../Qt/5.15.2/mingw81_32/include/QtWidgets/qtabwidget.h \
 		../../../../Qt/5.15.2/mingw81_32/include/QtGui/qicon.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/core.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/cvdef.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/hal/interface.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/version.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/base.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/opencv_modules.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/cvstd.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/ptr.inl.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/neon_utils.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/traits.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/matx.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/saturate.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/fast_math.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/types.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/mat.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/bufferpool.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/mat.inl.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/persistence.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/operations.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/cvstd.inl.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/utility.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/core_c.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/types_c.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/optim.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/core/ovx.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/highgui/highgui.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/highgui.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/imgcodecs.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/videoio.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/highgui/highgui_c.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/imgproc/imgproc_c.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/imgproc/types_c.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/imgcodecs/imgcodecs_c.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/videoio/videoio_c.h \
+		../Savelev_ME_z-38/opencv/include/opencv2/imgproc/imgproc.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/imgproc.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/objdetect/objdetect.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/objdetect.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/objdetect/detection_based_tracker.hpp \
+		../Savelev_ME_z-38/opencv/include/opencv2/objdetect/objdetect_c.h \
 		ui_mainwindow.h \
 		../../../../Qt/5.15.2/mingw81_32/include/QtCore/QVariant \
 		../../../../Qt/5.15.2/mingw81_32/include/QtWidgets/QApplication \
