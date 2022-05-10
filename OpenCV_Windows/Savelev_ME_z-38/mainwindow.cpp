@@ -9,9 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
-    if(vid==nullptr){
-        delete vid;
-    }
+
     delete ui;
 }
 
@@ -20,15 +18,15 @@ void MainWindow::on_pushButton_clicked()
     if(vid==nullptr)
     {
         vid=new cv::VideoCapture("C:\\SampleVideo\\Savelev_ME_z-38.mp4"); // open video file
-        if(!vid-> isOpened()) // check if we succeeded
+        if(!vid->isOpened()) // check if we succeeded
             return;
     }
-    cv:: Mat frame;
+    cv::Mat frame;
     int i=0;
     while(i++<10)
     {
-    (*vid) >> frame; //extract a frame
+        (*vid) >> frame; //extract a frame
     }
-    QImage img (frame.data, frame.cols, frame.rows, QImage::Format_RGB888);
+    QImage img(frame.data, frame.cols, frame.rows, QImage::Format_RGB888);
     ui->label->setPixmap(QPixmap::fromImage(img));
 }

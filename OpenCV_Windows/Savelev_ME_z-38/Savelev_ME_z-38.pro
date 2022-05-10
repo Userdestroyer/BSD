@@ -28,3 +28,4 @@ LIBS += -Lopencv/bin/ -lopencv_calib3d320d -lopencv_core320d -lopencv_features2d
 LIBS += -Lopencv/bin/ -lopencv_highgui320d -lopencv_imgcodecs320d -lopencv_imgproc320d -lopencv_ml320d -lopencv_objdetect320d
 LIBS += -Lopencv/bin/ -lopencv_photo320d -lopencv_shape320d -lopencv_stitching320d -lopencv_superres320d -lopencv_videoio320d
 LIBS += -Lopencv/bin/ -lopencv_videostab320d -lopencv_ffmpeg320
+LIBS += -LC:\GitHub\BSD\OpenCV_Windows\Savelev_ME_z-38\opencv\bin
