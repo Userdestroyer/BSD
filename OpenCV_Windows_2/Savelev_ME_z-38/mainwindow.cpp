@@ -10,6 +10,10 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
+    if (vid!=nullptr)
+    {
+        delete vid;
+    }
     delete ui;
 }
 
