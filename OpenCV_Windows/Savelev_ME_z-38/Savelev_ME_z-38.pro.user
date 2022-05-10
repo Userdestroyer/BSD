@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 7.0.1, 2022-05-09T21:48:11. -->
+<!-- Written by QtCreator 7.0.1, 2022-05-10T09:26:40. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -244,7 +244,7 @@
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/GitHub/BSD/OpenCV_Windows/Savelev_ME_z-38/Savelev_ME_z-38.pro</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
-    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">false</value>
     <value type="bool" key="RunConfiguration.UseTerminal">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/GitHub/BSD/OpenCV_Windows/Savelev_ME_z-38</value>
